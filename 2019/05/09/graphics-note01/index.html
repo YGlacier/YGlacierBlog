@@ -5,20 +5,20 @@
   
   <title>grahpics-note01 | YGlacier的没技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数  如图所示，atan2(s,c)会返回角度A。换句话说，$$atan2(s,c) = atan(s/c)$$ C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\p">
+  <meta name="description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数 如图所示，atan2(s,c)会返回角度A。换句话说，$atan2(s,c) = atan(s/c)$。 C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\pi]">
 <meta name="keywords" content="CG,Vulkan,OpenGL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="grahpics-note01">
-<meta property="og:url" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/grahpics-note01/index.html">
+<meta property="og:url" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/graphics-note01/index.html">
 <meta property="og:site_name" content="YGlacier的没技术博客">
-<meta property="og:description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数  如图所示，atan2(s,c)会返回角度A。换句话说，$$atan2(s,c) = atan(s/c)$$ C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\p">
+<meta property="og:description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数 如图所示，atan2(s,c)会返回角度A。换句话说，$atan2(s,c) = atan(s/c)$。 C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\pi]">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/grahpics-note01/img/atan2.png">
-<meta property="og:updated_time" content="2019-05-09T09:08:52.414Z">
+<meta property="og:image" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/graphics-note01/atan2.jpg">
+<meta property="og:updated_time" content="2019-05-09T11:05:40.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="grahpics-note01">
-<meta name="twitter:description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数  如图所示，atan2(s,c)会返回角度A。换句话说，$$atan2(s,c) = atan(s/c)$$ C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\p">
-<meta name="twitter:image" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/grahpics-note01/img/atan2.png">
+<meta name="twitter:description" content="Fundamentals of Computer Graphics 读书笔记 01基础数学第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。 atan2函数 如图所示，atan2(s,c)会返回角度A。换句话说，$atan2(s,c) = atan(s/c)$。 C++中的atan2函数需要#include&amp;lt;cmath&amp;gt;，函数返回的角度单位为$rad$，值域为$[-\pi,\pi]">
+<meta name="twitter:image" content="https://yglacier.github.io/YGlacierBlog/2019/05/09/graphics-note01/atan2.jpg">
   
     <link rel="alternative" href="/atom.xml" title="YGlacier的没技术博客" type="application/atom+xml">
   
@@ -33,15 +33,13 @@
   <link rel="apple-touch-icon" href="/YGlacierBlog/apple-touch-icon.png">
   
   
-      <link rel="stylesheet" href="/YGlacierBlog/fancybox/jquery.fancybox.css">
-  
   <!-- 加载特效 -->
     <script src="/YGlacierBlog/js/pace.js"></script>
     <link href="/YGlacierBlog/css/pace/pace-theme-flash.css" rel="stylesheet">
   <script>
       var yiliaConfig = {
           rootUrl: '/YGlacierBlog/',
-          fancybox: true,
+          fancybox: false,
           animate: true,
           isHome: false,
           isPost: true,
@@ -200,17 +198,15 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-grahpics-note01" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-graphics-note01" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/YGlacierBlog/2019/05/09/grahpics-note01/" class="article-date">
+      <a href="/YGlacierBlog/2019/05/09/graphics-note01/" class="article-date">
       <time datetime="2019-05-09T05:11:53.000Z" itemprop="datePublished">2019-05-09</time>
 </a>
     </div>
   
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
     
     
       <header class="article-header">
@@ -243,11 +239,8 @@
       
           
         <h1 id="Fundamentals-of-Computer-Graphics-读书笔记-01"><a href="#Fundamentals-of-Computer-Graphics-读书笔记-01" class="headerlink" title="Fundamentals of Computer Graphics 读书笔记 01"></a>Fundamentals of Computer Graphics 读书笔记 01</h1><h2 id="基础数学"><a href="#基础数学" class="headerlink" title="基础数学"></a>基础数学</h2><p>第二章里的基础数学还蛮简单的，这里就只列举之前不知道的知识。</p>
-<h3 id="atan2函数"><a href="#atan2函数" class="headerlink" title="atan2函数"></a>atan2函数</h3><p><img src="img/atan2.png" width="30%"></p>
-<!--
-<img src="../../public/2019/05/09/grahpics-note01/img/atan2.png" width=30%>
--->
-<p>如图所示，atan2(s,c)会返回角度A。<br>换句话说，<br>$$<br>atan2(s,c) = atan(s/c)<br>$$</p>
+<h3 id="atan2函数"><a href="#atan2函数" class="headerlink" title="atan2函数"></a>atan2函数</h3><p><img src="atan2.jpg" alt="atan2" width="20%" height="20%" title="atan2"></p>
+<p>如图所示，atan2(s,c)会返回角度A。<br>换句话说，$atan2(s,c) = atan(s/c)$。</p>
 <p>C++中的atan2函数需要#include&lt;cmath>，函数返回的角度单位为$rad$，值域为$[-\pi,\pi]$。</p>
 
       
@@ -258,13 +251,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/YGlacierBlog/2019/05/09/grahpics-note01/">grahpics-note01</a></p>
+        <p><span>本文标题:</span><a href="/YGlacierBlog/2019/05/09/graphics-note01/">grahpics-note01</a></p>
         <p><span>文章作者:</span><a href="/YGlacierBlog/" title="访问 Glacier Yu 的个人博客">Glacier Yu</a></p>
         <p><span>发布时间:</span>2019年05月09日 - 14时11分</p>
-        <p><span>最后更新:</span>2019年05月09日 - 18时08分</p>
+        <p><span>最后更新:</span>2019年05月09日 - 20时05分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/YGlacierBlog/2019/05/09/grahpics-note01/" title="grahpics-note01">https://yglacier.github.io/YGlacierBlog/2019/05/09/grahpics-note01/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://yglacier.github.io/YGlacierBlog/2019/05/09/grahpics-note01/　　作者: Glacier Yu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/YGlacierBlog/2019/05/09/graphics-note01/" title="grahpics-note01">https://yglacier.github.io/YGlacierBlog/2019/05/09/graphics-note01/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://yglacier.github.io/YGlacierBlog/2019/05/09/graphics-note01/　　作者: Glacier Yu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/YGlacierBlog/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -365,7 +358,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/YGlacierBlog/2019/05/09/grahpics-note01/">grahpics-note01</a></li><li class="post-list-item"><a class="post-list-link" href="/YGlacierBlog/2018/11/06/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/YGlacierBlog/2019/05/09/graphics-note01/">grahpics-note01</a></li><li class="post-list-item"><a class="post-list-link" href="/YGlacierBlog/2018/11/06/hello-world/">Hello World</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
